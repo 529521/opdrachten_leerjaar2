@@ -1,0 +1,118 @@
+<?php
+$_POST['voornaam'];
+$to = "joeydejong1112@gmail.com, somebodyelse@example.com";
+$subject = "HTML email";
+
+$message = "
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Email overview</title>
+</head>
+<body style=' margin: 0;
+padding: 0; color: white !important; '>
+  <main>
+    <div id='container' style='width: 100%; max-width: 650px; margin: 0 auto;
+    '>
+      <div id='center'>
+        <header>
+          <div id='logo' style='height: 100px;
+          background-color: blanchedalmond;'>
+            <figure><img src='Webby_Logo.png' style=' width: 50%;
+              height: 92px;'></figure>
+          </div>
+        </header>
+        <div id='content' style=' width: 100%;
+        min-height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('http://webby.gluweb.nl/img/marketing-overview.png');
+    background-repeat: no-repeat; '>
+
+          <h2 style='    font-size: 40px; color: black !important; 
+text-align: center;'>Confirmatie contact</h2>
+          <div id='text' style=' border: 1px solid black;
+          width: 60%;
+          min-height: 435px;
+          color: white;
+          font-weight: 500;
+          font-size: 20px;
+          margin-top: 30px;
+          margin: auto;'>
+            <div id='overlay' style='background-color: #333;
+            opacity: 0.8;'>
+              <!--voornaam-->
+              <p class='alignleft' style='padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 10px;
+              padding-bottom: 4px; float: left;'>Voornaam:</p>
+              <p class='alignright' style='padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 10px;
+              padding-bottom: 4px; padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 10px;
+              padding-bottom: 4px; float: right;'>Joey</p>
+              <div style='clear: both;'></div>
+              <!--email-->
+              <p class='alignleft' style='padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 10px;
+              padding-bottom: 4px; color: white !important;  float: left;'>Email:</p>
+              <p class='alignright' style='padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 10px;
+              padding-bottom: 4px; float: right;'>example@gmail.com</p>
+              <div style='clear: both;'></div>
+              <!--bericht-->
+              <p class='center' id='bericht' style=' margin-top: 10px;
+              font-size: 30px;
+              font-weight: bold;text-align: center;'>Bericht:</p>
+              <p style='max-width: 640px;    text-align: center;
+padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+              margin-top: 0;
+              margin-bottom: 0;
+              margin-right: auto;
+              margin-left: auto;'>Text on
+                The Atlassian brand i The Atlassian brand is anchored in teamwork; specifically, around the momentum,
+                progress, and pure achievement of people coming together. Marketing plays an important part in
+                reinforcing this idea. Across touchpoints, we acknowledge the true story of teamwork - that it’s
+                complex, chaotic, messy, but important The Atlassian brand i The Atlassian brand is anchored in
+                teamwork; specifically, around the momentum,
+                progress, and pure achievement of people coming together. Marketing plays an important part in
+                reinforcing this idea. Across touchpoints, we acknowledge the true story of teamwork - that it’s
+                complex, chaotic, messy, but i- while helping customers understand the role our products in
+                combating this complexity. the right.
+                <div style='clear: both;'></div>
+            </div>
+          </div>
+        </div>
+        <footer style='margin-top: 20px;
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+color: black!important;
+        background-color: blanchedalmond;'
+        >&copy;Webby / Grafische lyceum Utrecht</footer>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+";
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: <webmaster@example.com>' . "\r\n";
+$headers .= 'Cc: myboss@example.com' . "\r\n";
+
+mail($to,$subject,$message,$headers);
+?>

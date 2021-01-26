@@ -1,0 +1,30 @@
+   
+                <div class="row">
+                    <div class="col-md-3 px-2">
+                        <h4 class="border-bottom border-dark pb-2">
+                            INFORMATION
+                        </h4>
+                        <ul>
+                            <li>ABOUT US</li>
+                            <li>CUSTOMER SERVICE</li>
+      
+                    </div>
+                    <div class="col-md-3 px-2">
+                        <h4 class="border-bottom border-dark pb-2">
+                            MY ACCOUNT
+                        </h4>
+                        <ul>
+                            <li>SIGN IN</li>
+                            <li>VIEW CART</li>
+                            <li>MY WISHLIST</li>
+                            <li>TRACK MY ORDER</li>
+             
+             
+                </div>
+            </div>
+            <div id="copy" class="d-flex w-100 py-4">
+                <h5 class="m-auto">
+                    Copyright: company name
+                </h5>
+            </div>
+        </footer>

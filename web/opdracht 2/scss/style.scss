@@ -1,0 +1,102 @@
+@import "base";
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #c9c9c9c9;
+
+  #container {
+    margin: 0 auto;
+
+    width: $container;
+    color: $font-color;
+    text-align: center;
+  }
+
+  .box {
+    float: left;
+    width: $box;
+    height: 25%;
+    display: $inline;
+    line-height: 200px;
+  }
+
+  #a1 {
+    background-color: $base00;
+  }
+
+  #a2 {
+    background-color: $base01;
+  }
+
+  #a3 {
+    background-color: $base02;
+  }
+
+  #a4 {
+    background-color: $base03;
+  }
+
+  #a5 {
+    background-color: $base04;
+  }
+
+  #a6 {
+    background-color: $base05;
+  }
+
+  #a7 {
+    background-color: $base06;
+  }
+
+  #a8 {
+    background-color: $base07;
+  }
+
+  #a9 {
+    background-color: $yellow;
+  }
+
+  #a10 {
+    background-color: $orange;
+  }
+
+  #a11 {
+    background-color: $red;
+  }
+
+  #a12 {
+    background-color: $magentan;
+  }
+
+  #a13 {
+    background-color: $violet;
+  }
+
+  #a14 {
+    background-color: $blue;
+  }
+
+  #a15 {
+    background-color: $cyan;
+  }
+
+  #a16 {
+    background-color: $green;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    .box {
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    .box {
+      width: 100%;
+    }
+  }
+}

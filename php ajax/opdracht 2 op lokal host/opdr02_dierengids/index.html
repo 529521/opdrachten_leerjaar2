@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>innerHTML</title>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script>	
+$(document).ready(function(){
+	
+	 
+	$('#changehtml').click(function(){
+		
+		// Gebruik de .html() zonder argument 
+		// om te lezen wat er op dat moment in staat.
+		console.log( $('#display').html() );
+		
+		// Gebruik je wel een argument .html(arg)
+		// dan wijzig je de code.
+		var andereHTML = 'Dit is andere HTML! <a id="achterafID" href="#">test</a>';
+		$('#display').html(andereHTML);
+			
+	});
+	
+	// Er is echter een probleem!
+	// HTML dat later is toegevoegd, heeft geen verbinding met de DOM code.
+	// Daarom zal de onderstaande click functie NIET werken!!
+	$('#achterafID').click(function(){
+		alert('Werkt niet!');	
+	});
+	
+	
+	// Door document ON te gebruiken los je dit op!
+	// Dit werkt namelijk direct met de DOM samen en 
+	// kijkt wat er op dat moment in je code staat.
+	$(document).on('click','#achterafID', function(){
+		alert('Werkt wel!');
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<h1>innerHTML  .html() </h1>
+<button id="changehtml">Klik hier om andere html in te voegen</button>
+<p id="display">Klik op de knop en hier komt andere html!</p>
+</body>
+</html>

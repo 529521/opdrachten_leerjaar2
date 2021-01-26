@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Piano 2.0</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="controlpanel">
+      <form>
+        
+        <div id="waveform">
+          <div>
+            <label for=""><input type="radio" name="waveform" value="1" checked>Lower</label>
+            <label for=""><input type="radio" name="waveform" value="2">Middle</label>
+            <label for=""><input type="radio" name="waveform" value="3">Upper</label>
+        </div> 
+
+        <div id="transpose">
+          <div>
+            <div id="l-1" class="led"></div>
+            <div id="l0"  class="led"></div>
+            <div id="l1"  class="led"></div>
+          </div>
+          <div>
+            <p>-1</p>
+            <p>0</p>
+            <p>1</p>
+          </div>
+          <button>Down</button>
+          <button>Up</button>
+          <p>Transpose</p>
+        </div>
+
+        <div id="pitchbender">
+          <p>Pitchbender</p>
+          <input type="range" name="pitchbender" id="pb" min="-50" max="50" step="1">
+        </div>
+
+      </form>
+    </div>
+    <div id="keyboard">
+      <ul class="piano">
+        <li class="white" id="0" data-oct="1"></li>
+        <li class="black" id="1" data-oct="1"></li>
+        <li class="white" id="2" data-oct="1"></li>
+        <li class="black" id="3" data-oct="1"></li>
+        <li class="white" id="4" data-oct="1"></li>
+        <li class="white" id="5" data-oct="1"></li>
+        <li class="black" id="6" data-oct="1"></li>
+        <li class="white" id="7" data-oct="1"></li>
+        <li class="black" id="8" data-oct="1"></li>
+        <li class="white" id="9" data-oct="1"></li>
+        <li class="black" id="10" data-oct="1"></li>
+        <li class="white" id="11" data-oct="1"></li>
+        <li class="white" id="12" data-oct="2"></li>
+        <li class="black" id="13" data-oct="2"></li>
+        <li class="white" id="14" data-oct="2"></li>
+        <li class="black" id="15" data-oct="2"></li>
+        <li class="white" id="16" data-oct="2"></li>
+        <li class="white" id="17" data-oct="2"></li>
+        <li class="black" id="18" data-oct="2"></li>
+        <li class="white" id="19" data-oct="2"></li>
+        <li class="black" id="20" data-oct="2"></li>
+        <li class="white" id="21" data-oct="2"></li>
+        <li class="black" id="22" data-oct="2"></li>
+        <li class="white" id="23" data-oct="2"></li>
+        <li class="white" id="24" data-oct="3"></li>
+        <li class="black" id="25" data-oct="3"></li>
+        <li class="white" id="26" data-oct="3"></li>
+        <li class="black" id="27" data-oct="3"></li>
+        <li class="white" id="28" data-oct="3"></li>
+        <li class="white" id="29" data-oct="3"></li>
+        <li class="black" id="30" data-oct="3"></li>
+        <li class="white" id="31" data-oct="3"></li>
+        <li class="black" id="32" data-oct="3"></li>
+        <li class="white" id="33" data-oct="3"></li>
+        <li class="black" id="34" data-oct="3"></li>
+        <li class="white" id="35" data-oct="3"></li>
+        <li class="white" id="36" data-oct="3"></li>
+      </ul>
+    </div>
+  </div>
+  <script src="assets/js/webaudioapi.js"></script>
+  <script src="assets/js/piano.js"></script>
+  <script src="assets/js/controlpanel.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

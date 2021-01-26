@@ -1,0 +1,309 @@
+$groen: #709b1d;
+$grijs: #f3f3f3;
+
+
+
+
+* {
+    font-family: "Open Sans";
+}
+
+.row {
+    padding: 0 !important;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+#container {
+    max-width: 940px;
+    z-index: 10;
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../img/main_bg.png');
+}
+
+header {
+    #nav-one {
+        background-color: #709b1d;
+
+        .nav-pills>.active>a {
+            background-color: #fff !important;
+            color: #709b1d !important;
+        }
+    }
+
+    #header-banner {
+        h1 {
+            font-family: "Dosis", "sans-serif";
+
+            span {
+                color: #709b1d;
+                font-family: inherit;
+            }
+        }
+
+        a {
+            color: #709b1d;
+            text-decoration: none;
+        }
+    }
+
+    #nav-two {
+        background-color: #f3f3f3;
+
+        * {
+            color: #709b1d;
+        }
+
+        .navbar-toggler {
+            width: auto !important;
+        }
+
+        form button {
+            background: #709b1d;
+        }
+
+        .nav-pills>.active>a {
+            background-color: #709b1d !important;
+            color: #fff !important;
+            position: relative;
+        }
+    }
+}
+
+#content {
+    position: relative;
+
+    #content-header {
+        background: #709b1d;
+        color: #fff;
+    }
+
+    #content-items-container {
+        #content-banner {
+            background-image: url('../img/content-banner.png');
+         
+
+            .col-sm-4 {
+                background: #709b1d;
+            }
+        }
+
+        .item-cards {
+            position: relative;
+            background: #f3f3f3;
+
+            h6 {
+                background: #fff;
+                display: inline-block;
+                width: 90%;
+                font-size: 14px;
+                position: absolute;
+                color: #709b1d;
+                left: 50%;
+                top: 80%;
+                transform: translate(-50%, -90%);
+            }
+
+            i {
+                font-size: 13px;
+                background-color: #709b1d;
+                line-height: 20px;
+                border-radius: 20% 20% 0 0;
+            }
+        }
+
+        #filter {
+            .container {
+                .filter-cards * {
+                    padding-left: 36px;
+                }
+
+                h5 {
+                    color: #fff;
+                    background-color: #709b1d;
+                }
+
+                .triangle {
+                    ul {
+                        padding-left: 0;
+                        list-style-type: none;
+
+                        li {
+                            position: relative;
+
+                           
+                        }
+                    }
+
+                    li.filter-active {
+                        color: #709b1d;
+
+                       
+                    }
+                }
+
+                .my-checkbox {
+                    .checkbox-label {
+                        display: block;
+                        position: relative;
+                        cursor: pointer;
+                        user-select: none;
+
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+                    }
+
+                    .checkmark {
+                        padding: 0;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        margin-left: 15px;
+                        height: 8px;
+                        width: 8px;
+                        background-color: #fff;
+                        border: #fff 1px solid;
+                        outline: #709b1d 2px solid;
+                    }
+                }
+            }
+
+            .my-ad {
+                height: 100px;
+                background-color: #f3f3f3;
+            }
+        }
+    }
+
+    #promotion {
+        position: relative;
+        height: 100px;
+        background-image: url('../img/promotion_bg.png');
+       
+
+        .card-container .card-content {
+            background-color: #83b228;
+
+            i {
+                font-size: 35px;
+            }
+
+            div {
+                vertical-align: top;
+            }
+        }
+    }
+
+    #brand h3 {
+        background: #709b1d;
+    }
+}
+
+footer {
+    h4 {
+        color: #709b1d;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 13px;
+        margin-bottom: 0;
+        margin-left: 20px;
+        position: relative;
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+    }
+
+    #list {
+        position: relative;
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+
+            li {
+                position: relative;
+                font-size: 13px;
+                line-height: 22px;
+
+
+            }
+        }
+    }
+
+    #footer-icons {
+        position: relative;
+
+        button {
+            background-color: #709b1d;
+            color: #fff;
+        }
+    }
+
+    #copy {
+        position: relative;
+
+        h5 {
+            color: #aed660;
+        }
+    }
+}
+
+#item-container {
+
+    .border-on,
+    .detail-thumbnails:hover {
+        border: 1px #709b1d solid;
+        cursor: pointer;
+    }
+
+    img.detail-thumbnails {
+        box-sizing: content-box;
+    }
+
+    h2 {
+        color: #709b1d;
+        font-size: 40px;
+    }
+
+    i {
+        font-size: 25px;
+        background-color: #709b1d;
+        border-radius: 20%;
+        line-height: 40px;
+        padding: 0 4px;
+    }
+
+    #price-container {
+        background-color: #f3f3f3;
+
+        h4 {
+            font-size: 50px;
+        }
+
+        button {
+            background-color: #709b1d;
+            color: #fff;
+        }
+    }
+}
+
+#Description h4 {
+    border-bottom: 2px black solid;
+    color: black!important;
+}

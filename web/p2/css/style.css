@@ -1,0 +1,24 @@
+#first {
+    width: 100%;
+    height: 100vh;        background-image: url('http://getwallpapers.com/wallpaper/full/e/9/8/41955.jpg');
+
+}
+
+#first i {
+
+    font-size: 30px;
+}
+#first a{
+    color: white!important;
+}
+border{
+    border: 1px solid black;
+}
+.left{
+    height: auto;
+}
+* {
+    font-family: '8BITWONDERNominal';
+    font-weight: normal;
+    font-style: normal;
+}

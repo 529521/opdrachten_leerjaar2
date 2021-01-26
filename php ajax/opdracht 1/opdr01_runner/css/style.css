@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+#container {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+}
+
+h1 {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#starter {
+	position: absolute;
+	left: 10px;
+	top: 100px;
+}
+
+#checker {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 100px;
+}
+
+#runner {
+	height: 100px;
+	position: absolute;
+	left: 0px;
+	top: 200px;
+	z-index: 2;
+}
+
+#finish {
+	height: 200px;
+	position: absolute;
+	right: 0px;
+	top: 140px;
+	z-index: 1;
+}

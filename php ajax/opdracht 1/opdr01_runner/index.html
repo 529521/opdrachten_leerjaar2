@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Runner medal</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function () {
+
+			$('#starter').click(function () {
+				$('#runner').animate({
+					left: '630px'
+				}, 8000, function () {
+					$("#checker").css("display", "block");
+					$('#checker').click(function () {
+						alert('Gefeliciteerd!');
+					});
+
+				});
+
+
+			});
+
+
+
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<h1>Runners UP</h1>
+		<button id="starter">START RUNNING</button>
+		<button id="checker">GIVE MEDAL</button>
+		<img id="runner" src="imgs/runner.gif">
+		<img id="finish" src="imgs/finish.jpg">
+	</div>
+</body>
+
+</html>

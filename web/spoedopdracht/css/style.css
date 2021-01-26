@@ -1,0 +1,348 @@
+@font-face {
+	font-family: Neutraface;
+	src: url('../fonts/Neutraface 2 Disp Greek Inline.otf');
+}
+
+@font-face {
+	font-family: Neutraface_medium;
+	src: url('../fonts/Neutraface 2 Disp Greek medi.otf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#container {
+	width: calc(100% -44px);
+	max-width: 1400px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+body {
+	background-image: url('../img/background.png');
+	margin: 25px 0px;
+}
+
+header {
+	background-image: url('../img/header_bg.png');
+	text-align: center;
+	background-size: cover;
+
+}
+
+header h1 {
+	float: left;
+	margin: 38px 0px 0px 38px;
+	font-family: 'Neutraface';
+	font-size: 26px;
+}
+
+header nav ul {
+	float: right;
+	margin-right: 38px;
+}
+
+header nav li {
+	margin-top: 38px;
+	display: inline-block;
+	font-family: 'Neutraface';
+	font-size: 16px;
+}
+
+header ul li a {
+	color: #000;
+	text-decoration: none;
+	padding: 0 40px;
+}
+
+header nav {
+	overflow: auto;
+}
+
+#section1 {
+	background: #fff url('../img/herbas.png');
+	text-align: center;
+	overflow: auto;
+}
+
+#section1 .content {
+	width: 40.19174041297935%;
+	float: left;
+}
+
+#section1 h2 {
+	font-size: 37px;
+	margin-top: 34.17322834645669%;
+	font-family: 'Neutraface';
+}
+
+#section1 p {
+	margin: 0 auto;
+	margin-top: 10.23622047244094%;
+	font-family: 'Neutraface_medium';
+	width: 69.1743119266055%;
+	font-size: 17px;
+}
+
+#section1 .bonen {
+	width: 59.80825958702065%;
+	float: right;
+}
+
+#section2 {
+	background: #fff url('../img/herbas.png');
+	text-align: center;
+	overflow: auto;
+}
+
+#section2 .salade {
+	width: 69.10029498525074%;
+	float: left;
+}
+#section2 .content2 {
+	width: 30.89970501474926%;
+	float: right;
+}
+#section2 .bloem {
+	margin-top: 34.17322834645669%;
+}
+
+#section2 h2 {
+	font-size: 27px;
+	margin-top: 8.702064896755162%;
+	font-family: 'Neutraface';
+}
+
+#section2 .balkje {
+	margin-top: 5.899705014749263%;
+}
+
+#section2 p {
+	margin: 0 auto;
+	margin-top: 3.982300884955752%;
+	font-family: 'Neutraface_medium';
+	font-size: 17px;
+}
+#section3 {
+	background: #fff url('../img/herbas.png');
+	text-align: center;
+	overflow: auto;
+}
+
+#section3 .soep {
+	width: 69.10029498525074%;
+	float: right;
+}
+#section3 .content3 {
+	width: 30.89970501474926%;
+	float: right;
+}
+#section3 .blad {
+	margin-top: 34.17322834645669%;
+}
+
+#section3 h2 {
+	font-size: 27px;
+	margin-top: 8.702064896755162%;
+	font-family: 'Neutraface';
+}
+
+#section3 .balkje {
+	margin-top: 5.899705014749263%;
+}
+
+#section3 p {
+	margin: 0 auto;
+	margin-top: 3.982300884955752%;
+	font-family: 'Neutraface_medium';
+	font-size: 17px;
+}
+
+#section4 img {
+	width: 100%;
+}
+
+#section5 {
+	background: #fff url('../img/herbas.png');
+	overflow: auto;
+	width: 100%;
+}
+
+#section5 .links {
+	margin-top: 138px;
+}
+#align_footer{
+	margin-left: 6.489675516224189%;
+	margin-right: 6.489675516224189%;
+
+}
+#section5 h2 {
+	display: inline-block;
+	font-family: 'Neutraface';
+	font-size: 26px;	
+}
+
+#section5 .rechts {
+	display: inline-block;
+	
+}
+
+#section5 .contact {
+	font-family: 'Neutraface_medium';
+	font-size: 17px;
+	margin-top: 112px;
+}
+
+#section5 .social {
+	display: inline-block;
+	float: right;
+	margin-bottom: 112px;
+}
+.social img{
+	opacity: 0.5;
+
+}
+.marginright {
+	margin-right:23px;
+}
+
+.mobile-container {
+	display: none;
+width: 100%;	margin: auto;
+	height: auto;
+	color: white;
+	border-radius: 10px;
+  }
+  
+  .topnav {
+	background-image: url(../img/hamburger.png);
+
+	position: relative;
+    width: 107px;
+    height: auto;
+    min-height: 40px;
+    background-position: center;
+    margin-right: 5%;
+    float: right;
+    margin-top: 4%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .topnav #myLinks {
+	background-color: grey;
+    margin-top: -4px;  }
+  
+  .topnav a {
+	color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+	display: block;
+    /* position: absolute; */
+    background-image: url(../img/hamburger.png);
+    /* right: 0; */
+    /* top: 0; */
+    float: right;
+    width: 100%;
+    height: 40px;
+  }
+  
+ 
+  
+  .active {
+	background-color: #4CAF50;
+	color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+	#section1 .content{
+		width: 100%;
+	}
+  }
+  @media screen and (max-width: 844px) {
+	#section2 .bloem {
+		margin-top: 1.173228%;
+	}
+	#section3 .blad {
+		margin-top: 1.173228%;
+	}
+	#desktop{
+		display: none;
+	}
+	.mobile-container{
+		display: block;
+	}
+  }
+  @media screen and (max-width: 772px) {
+	#section1 .content{
+		width: 100%;
+	}
+	#section1 h2{
+		margin-top: 0px;
+	}
+	#section1 p{
+		margin-top: 1%;
+	}
+	#section1 .bonen {
+		width: 100%;
+		height: 394px;
+	}
+	#section2 .content2 {
+		width: 100%;
+		/* float: right; */
+	}
+	#section2 .salade {
+		width: 100%;
+		/* float: left; */
+		height: 394px;
+	}
+	#section2 h2 {
+		font-size: 27px;
+		margin-top: 2.702065%;
+		font-family: 'Neutraface';
+	}
+	#section2 .balkje {
+		margin-top: 1.899705%;
+	}
+	#section2 p {
+		margin: 0 auto;
+		margin-top: 0.982301%;
+		font-family: 'Neutraface_medium';
+		font-size: 17px;
+	}
+	#section3 .content3 {
+		width: 100%;
+		/* float: right; */
+	}
+	#section3 .soep {
+		width: 100%;
+		height: 394px;
+		float: right;
+	}
+	#section3 p {
+		margin: 0 auto;
+		margin-top: 0.982301%;
+		font-family: 'Neutraface_medium';
+		font-size: 17px;
+	}
+	#section3 .balkje {
+		margin-top: 1.899705%;
+	}
+	#section3 h2 {
+		font-size: 27px;
+		margin-top: 2.702065%;
+		font-family: 'Neutraface';
+	}
+	header img{
+		height: 299px;
+
+	}
+  }

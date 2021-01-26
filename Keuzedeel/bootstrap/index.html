@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d24ca64b2d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Webby -Hoofdpagina</title>
+
+</head>
+
+<body id="body" onload="Start()"></body>>
+<script src="js/myscript.js"></script>
+<div class="container-fluid">
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Camping</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="Uitleg()">Uitleg</a>
+                        <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="Taak1()">Taak1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="Taak2()">Taak2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="Taak3()">Taak3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container margin-top">
+
+        <div class="row">
+            <div class="col-md-12">
+                <!--uitleg 1-->
+                <div id="uitleg">
+                    <div class="row text-left" style="word-break: break-word;">
+                        <div class="col-md-12 ">
+                            <label class="text-center">Hoofdtaken</label>
+                            <ol>
+                                <li>Coördinerende en teamgerichte taken</li>
+                                <li>Kwaliteitsbewaking team en activiteitenprogramma</li>
+                                <li>Vertegenwoordiging team binnen en buiten groep</li>
+                            </ol>
+                            <label>Uitleg</label>
+                            <p>Op het volgende tabbladden vind je de onderdelen van de kwalificatie die betrekking
+                                hebben op
+                                jou als leidinggevende binnen scouting.
+                                Geef bij ieder onderdeel (gele cellen) aan in hoeverre je hiermee bekend bent of het
+                                beheerst (schaal van 1 t/m 5).
+                                De schaal is opvolgend. Wanneer je ervan weet, maar het nog nooit hebt gebruikt en het
+                                wel
+                                aan een ander kan uitleggen, scoor je 2.
+                                Deze meting is bedoeld om te kijken welke onderdelen je al denkt te beheersen en welke
+                                je
+                                denkt te kunnen verbeteren.
+                                Als je alle onderdelen hebt ingevuld, is op het laatste tabblad "Score" te zien wat je
+                                score
+                                is.
+                                Er zal dan duidelijk worden welk thema’s in meer of minder mate aandacht nodig hebben.
+                                Hierop zullen verdere workshops en gesprekken met je praktijkbegeleider afgestemd
+                                worden.
+                            </p>
+                            <p>Beantwoord de vragen zo eerlijk mogelijk. Er bestaat geen goed of fout, je kunt er enkel
+                                van
+                                leren!</p>
+                            <label>Beoordelings scores</label>
+                            <ol>
+                                <li>is mij onbekend/ kan ik niet</li>
+                                <li>ik weet ervan, maar heb het nooit gebruikt</li>
+                                <li>ik weet het en kan het toepassen</li>
+                                <li>ik kan het toepassen in andere situaties / omstandigheden</li>
+                                <li>ik kan een ander uitleggen wat het is en hoe je het kan toepassen</li>
+
+                            </ol>
+                        </div>
+                        <button type="button" onclick="Taak1()"
+                            class="btn w-100 text-center btn-primary">Volgende</button>
+
+                    </div>
+                </div>
+                <!--uitleg-->
+                <form class="">
+                    <!--TAAK 1-->
+                    <div id="taak1">
+                        <!--form vraag-->
+                        <h2>Taak1</h2>
+
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Periodiek planning taken en werkzaamheden
+                                maken.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Bevorderen samenwerking leidingteam, zowel voor
+                                jeugdleden als voor leiding onderling.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Bevorderen taakverdeling leidingteam, zowel voor
+                                jeugdleden als voor leiding onderling.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Tonen daadkracht ten aanzien van veiligheid en
+                                optreden
+                                indien nodig.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Leiderschap tonen bij crisis (voorspelbare
+                                situatie)</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Aanpassen eigen houding situatie van het
+                                moment.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Aanpassen eigen gedrag situatie van het
+                                moment.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Juist afhandelen ongeval (onvoospelbare situatie)
+                                richting jeugdlid en ouders, in samenwerking met groepsbestuur.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <hr> <button type="button" onclick="Taak2()"
+                            class="btn w-100 text-center btn-primary">Volgende</button>
+                        <!--end form vraag-->
+                    </div>
+                    <!--TAAK 1-->
+                    <!--TAAK 2-->
+                    <div id="taak2">
+                        <h2>Taak2</h2>
+
+                        <!--form vraag-->
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Belang van de kwaliteit van het
+                                activiteitenprogramma.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Bewaken kwalititeit van het activiteitenprogramma,
+                                rekening houdend met de progressiematrix.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Actieve rol aannemen in begeleiding nieuwe teamleden
+                                tijdens introductiefase.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Kwaliteit leidingteam bewaken, in overleg met
+                                team</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Kwaliteit leidingteam verbeteren, in overleg met
+                                team</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Kwaliteit leidingteam bewaken, in overleg met groeps-
+                                en
+                                praktijkbegeleider.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Kwaliteit leidingteam verbeteren, in overleg met
+                                groeps-
+                                en praktijkbegeleider</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Ontwikkelplan team opstellen, in overleg met groeps-
+                                em
+                                praktijkbegeleider</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Complexe leeftijds- en gedragskenmerken in de eigen
+                                en
+                                naastliggende speltak verklaren, rekening houdend met ontwikkeling brein.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Binnen leidingteam reflecteren op elkaars houding en
+                                gedrag.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Stimuleren en motiveren teamleden in houdig en gedrag
+                                goed voorbeeld te geven.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Initiatief (regelmatig) teamoverleg en evaluatie
+                                leidingteam.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Ontwikkelplan team opstellen, in overleg met groeps-
+                                em
+                                praktijkbegeleider</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+
+                        </div>
+                        <hr> <button type="button" onclick="Taak3()"
+                            class="btn w-100 text-center btn-primary">Volgende</button>
+
+                        <!--end form vraag-->
+                    </div>
+                    <!--TAAK 2-->
+                    <!--TAAK 3-->
+                    <div id="taak3">
+                        <h2>Taak3</h2>
+
+                        <!--form vraag-->
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Actief participeren in overleg met eigen inbreng en
+                                afstemmig.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Inzien noodzaak juiste taakverdeling.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Eigen werkzaamheden afstemmen met overige
+                                teamleden.</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Op bekwame wijze speleenheid vertegenwoordigen binnen
+                                groep (contacten andere teamleiders, aanspreekpunt ouders).</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--end form vraag-->
+                        <!--form vraag-->
+                        <hr>
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Op bekwame wijze speleenheid vertegenwoordigen buiten
+                                groep (contacten teamleiders andere groepen, regio).</label>
+                            <div class="col-sm-4">
+                                <select name="vraag1" class="form-control">
+                                    <option value="vraag1_1">1</option>
+                                    <option value="vraag1_2">2</option>
+                                    <option value="vraag1_3">3</option>
+                                    <option value="vraag1_4">4</option>
+                                    <option value="vraag1_5">4</option>
+
+                                </select>
+                            </div>
+
+
+                        </div>
+                        <hr>
+                        <input onclick="Klaar()" value="Controleer alle je gegevens en klik volgende"
+                            class="btn w-100 text-center btn-primary">
+                        <!--end form vraag-->
+                    </div>
+                    <!--TAAK 3-->
+                    <div id="klaar">
+
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h2 class="text-center">Je hebt alle vragen Beantwoord</h2>
+                                <p>Klik hier op alles op te slaan!</p>
+                                <input type="submit" name="submit" onclick="Klaar()" value="Sla op"
+                                    class="btn w-50  text-center btn-primary">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="http://webby.gluweb.nl/"> Camping</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+</div>
+</body>
+
+</html>

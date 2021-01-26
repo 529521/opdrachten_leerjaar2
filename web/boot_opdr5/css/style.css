@@ -1,0 +1,71 @@
+.red {
+    background-color: red !important;
+    border-color: red !important;
+    color: white !important;
+}
+
+.top {
+    margin-top: 180px;
+}
+
+.blues {
+
+}
+
+.align {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.main {
+
+    height: auto;
+    background-color: white;
+}
+
+.wallpaper {
+    background-size: cover;
+    background-position: center;
+    min-height: 914px;
+    height: auto;
+    background-image: url('../harry-hundal-y9ctpaxexTI-unsplash.jpg');
+}
+.d-inline-block{
+}
+.height{
+    min-height: 473px;
+    
+
+}
+.height img{
+    width: 100%;
+    height: 300px;
+}
+footer{
+    min-height: 556px;
+}
+footer a{
+    color:grey!important ;
+}
+.margin-top{
+    margin-top: 100px;
+}
+.fa-paypal{
+    font-size: 25px;
+    border: none;
+    color: blue;
+    background-color: white;
+    margin-left: 5px;
+}
+.orange{
+    background-image: url('../5842f005a6515b1e0ad75b0f.png');
+    background-color: orangered;
+    background-size: 77%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav-height{
+    line-height: 81px;
+    color: white;
+    height: 81px;
+}

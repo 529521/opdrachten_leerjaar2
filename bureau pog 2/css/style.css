@@ -1,0 +1,70 @@
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+.head {
+    height: 70px;
+    background-color: #30373b;
+}
+.bigpic{
+    height: 500px;
+    width: 100%;
+
+}
+#carouselExampleIndicators{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.max-width{
+    max-width: 1200px;
+}
+.carousel-item img{
+    max-height: 600px;
+}
+.border{
+    border: 1px solid white;
+}
+.lightbulb{
+    font-size: 55px;
+}
+.text-break-all{
+    word-break: break-all;
+}
+.padding-25{
+    padding: 25%;
+}
+.form-padding{
+    padding: 10% 15% 15% 15%;
+
+}
+.form-row{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.line-height-head{
+    line-height: 70px;
+}
+.shadow1{
+    box-shadow: 2px 21px 9px -19px rgba(0,0,0,0.1);
+    border-radius: 17%;
+
+}
+.h2-edit{
+    font-size: 50px;
+    font-weight: bold;
+}
+.pad{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 50%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
